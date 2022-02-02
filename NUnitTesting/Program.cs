@@ -9,7 +9,8 @@ namespace NUnitTesting
             Console.WriteLine("Welcome to NUnit Testing Programs");
             Console.WriteLine("\n 1. Vending Machine \n" +
                                "\n 2. Days Of Week  \n " +
-                               "\n 3. Exit  ");
+                               "\n 3. Temperature Conversion \n" +
+                               "\n 4. Exit  ");
             Console.WriteLine("\n Choose Any Program \n");
             int n=Convert.ToInt32(Console.ReadLine());
 
@@ -22,7 +23,11 @@ namespace NUnitTesting
                     DOW.GregorianCalender();
                     break;
 
-                case 3: Console.WriteLine("Exit");
+                case 3: TemperatureConversion Temp = new TemperatureConversion();
+                    Temp.Degrees();
+                    break;
+
+                case 4: Console.WriteLine("Exit");
                     break;
 
                 default: Console.WriteLine("Enter Correct Number");
