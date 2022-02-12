@@ -12,7 +12,8 @@ namespace NUnitTesting
                                "\n 3. Temperature Conversion \n" +
                                "\n 4. Monthly Payment \n" +
                                "\n 5. Square Root \n " +
-                               "\n 6. Exit  ");
+                               "\n 6. Binary No\n " +
+                               "\n 7. Exit  ");
             Console.WriteLine("\n Choose Any Program \n");
             bool flag = true;
             while (flag)
@@ -41,6 +42,10 @@ namespace NUnitTesting
                         break;
 
                     case 6:
+                        BinaryNo.ToBinary(42);
+                        break;
+
+                    case 7:
                         flag= false;
                         break;
 
