@@ -11,7 +11,8 @@ namespace NUnitTesting
                                "\n 2. Days Of Week  \n " +
                                "\n 3. Temperature Conversion \n" +
                                "\n 4. Monthly Payment \n" +
-                               "\n 5. Exit  ");
+                               "\n 5. Square Root \n " +
+                               "\n 6. Exit  ");
             Console.WriteLine("\n Choose Any Program \n");
             bool flag = true;
             while (flag)
@@ -35,8 +36,11 @@ namespace NUnitTesting
                     case 4:
                         MonthlyPayment.Payments(3,4,5);
                         break;
-
                     case 5:
+                        SquareRoot.Sqrt();
+                        break;
+
+                    case 6:
                         flag= false;
                         break;
 
